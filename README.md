@@ -16,3 +16,12 @@ It is a [Maven](https://maven.apache.org/) based project, so you can open this p
  * `cdk docs`        open CDK documentation
 
 Enjoy!
+
+## Reduce AWS costs
+
+### VPC
+- Max zones to `2` - maxAzs(2)
+- Nat gateways to `0` - natGateways(0)
+
+### Service
+- Assign public IP (doesn't have nat) - assignPublicIp(true)
