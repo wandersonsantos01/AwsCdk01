@@ -44,6 +44,9 @@ public class RdsStack extends Stack {
                 .multiAz(false)
                 .allocatedStorage(10)
                 .securityGroups(Collections.singletonList(iSecurityGroup))
+//                .vpcSubnets(SubnetSelection.builder()
+//                        .subnets(vpc.getPublicSubnets()) // @ATTENTION: Reduce costs
+//                        .build())
                 .vpcSubnets(SubnetSelection.builder()
                         .subnets(vpc.getPrivateSubnets())
                         .build())

@@ -37,7 +37,7 @@ public class Service01Stack extends Stack {
                 .taskImageOptions(
                         ApplicationLoadBalancedTaskImageOptions.builder()
                                 .containerName("aws-project-01")
-                                .image(ContainerImage.fromRegistry("wandersonsantos01/ecs-fargate-cdk-01:0.0.1"))
+                                .image(ContainerImage.fromRegistry("wandersonsantos01/ecs-fargate-cdk-01:0.1.0"))
                                 .containerPort(8080)
                                 .logDriver(LogDriver.awsLogs(AwsLogDriverProps.builder()
                                         .logGroup(LogGroup.Builder.create(this,"Service01LogGroup")
