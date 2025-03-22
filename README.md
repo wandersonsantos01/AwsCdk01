@@ -15,6 +15,14 @@ It is a [Maven](https://maven.apache.org/) based project, so you can open this p
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
+```SHELL
+
+$ cdk deploy --all --parameters Rds:databaseUsername=root --parameters Rds:databasePassword=root9876543210 --require-approval never
+$ cdk deploy Service01
+$ cdk destroy --all
+
+```
+
 Enjoy!
 
 ## Reduce AWS costs
